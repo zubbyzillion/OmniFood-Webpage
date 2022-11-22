@@ -264,6 +264,8 @@ body {
 
 .section-how {
     padding: 9.6px 0;
-    background-color: orangered;
 }
 
+.step-img  {
+    width: 50%;
+}
