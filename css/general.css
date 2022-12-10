@@ -24,7 +24,9 @@ Paragraph Default: 1.6
 
 - Primary: #e67e22
 - Tints: #fdf2e9
-- Shades: #cf711f
+- Shades: 
+#cf711f
+#45260a
 - Accents:
 - Greys:
 
@@ -148,6 +150,7 @@ body {
     letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link, 
 .btn:visited {
     display: inline-block;
@@ -157,6 +160,11 @@ body {
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
+
+    /* Only necessary for the .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 
     /* Put transition on original state */
     /* transition: background-color 0.3s; */
@@ -186,6 +194,13 @@ body {
     
     /* Trick to add border inside  */
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
 }
 
 .link:link,
