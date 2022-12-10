@@ -358,9 +358,17 @@
                         <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
 
                         <form class="cta-form" action="#">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="John Smith" />
-                            <input type="email" />
+                            <label for="full-name">Full Name</label>
+                            <input id="full-name" type="text" placeholder="John Smith" />
+
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" placeholder="me@example.com"/>
+
+                            <label  for="select-where">Where did you hear about us?</label>
+                            <select>
+                                <option value="select-where">Friends and family</option>
+                            </select>
+
                             <button class="btn">Sign up now</button>
                         </form>
                     </div>
