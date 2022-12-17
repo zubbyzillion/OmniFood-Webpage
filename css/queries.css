@@ -23,7 +23,23 @@
 /*************************/
 
 @media (max-width: 75em) {
+    html {
+        /* 9px / 16px */
+        font-size: 56.25%;
+    }
 
+    .grid {
+        row-gap: 4.8rem;
+        column-gap: 6.4rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
 }
 
 /* 
