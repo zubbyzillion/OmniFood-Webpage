@@ -128,7 +128,7 @@
     }
 
     .icon-mobile-nav {
-        
+
     }
 
     .main-nav {
@@ -142,11 +142,43 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.5s;
+
+        /* Hide the Navigation */
+        /* Does not allow transitions at all */
+        /* display: none; */
+
+        /* 1) Hide it visually */
+        opacity: 0;
+
+        /* 2) Make it unaccessible to mouse and keyboard */
+        pointer-events:none;
+
+        /* 3) Hide it from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+    .icon-mobile-nav[name="menu-outline"] {
+        /* display: none; */
     }
 
     .main-nav-list {
         flex-direction: column;
         gap: 4.8rem;
+    }
+
+    .main-nav-link.nav-cta:link,
+    .main-nav-link.nav-cta:visited {
+        font-size: 3rem;
     }
 
 }
