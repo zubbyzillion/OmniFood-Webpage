@@ -76,6 +76,11 @@
     display: none;
 }
 
+/* STICKY NAVIGATION */
+.sticky {
+    position: fixed;
+}
+
 /*************************/
 /* HERO SECTION */
 /*************************/
