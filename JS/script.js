@@ -43,3 +43,6 @@ allLinks.forEach(function(link) {
         headerEl.classList.toggle("nav-open");
     })
 })
+
+//////////////////////////////////////
+//Sticky Navigation
