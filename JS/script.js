@@ -46,3 +46,18 @@ allLinks.forEach(function(link) {
 
 //////////////////////////////////////
 //Sticky Navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+    function (entries) {
+        const ent = entries[0];
+        console.log(ent);
+    }, 
+    {
+        // In the viewport
+        root: null,
+        threshold: 0,
+    }
+);
+obs.observe(sectionHeroEl);
